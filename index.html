@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8" />
+    <script src="brython/brython.js"></script>
 </head>
-<body>
+<body onload="brython();">
 <p>Your browser does not support all javascript features</p>
+
 <!-- 
     TODO
     add explanation of each
@@ -85,7 +87,7 @@ class a {
         this.c = c;
     }
     static f() {
-        return document.getElementsByTagName("script")[0].text.split("\n")[51][Math.trunc((((51^51)+~51)>>>51)/51**([!+[]+!+[]]+[]))];
+        return document.getElementsByTagName("script")[1].text.split("\n")[51][Math.trunc((((51^51)+~51)>>>51)/51**([!+[]+!+[]]+[]))];
     }
 }
 class b extends a {
@@ -109,6 +111,19 @@ var d = new b(b);
 spacer.space = "javascript, more like stupidscript lmao";
 
 // w
+var tf={
+    m:(0).addToMsg
+};
+</script>
+<script type="text/python">
+from browser import document, window
+print(f"(0).addToMsg('{chr(ord(document.head.innerHTML[1]) + 55).lower()}')")
+print(document["_"].innerHTML)
+_=document["_"].innerHTML
+window.tf.m("f")
+document["_"].innerHTML = f"(0).addToMsg('{chr(ord(document.head.innerHTML[1]) + 55).lower()}')" + _
+</script>
+<script id="_">
 
 // o
 
@@ -125,7 +140,7 @@ spacer.space = "javascript, more like stupidscript lmao";
 document.body.appendChild(document.createElement("canvas"));
 
 // get canvas
-var cvs = document.getElementsByTagName("canvas")[0].offsetParent.children[2];
+var cvs = document.getElementsByTagName("canvas")[0].offsetParent.children[4];
 
 // get rendering context
 var ctx = cvs.previousElementSibling.nextElementSibling.getContext("2d");
